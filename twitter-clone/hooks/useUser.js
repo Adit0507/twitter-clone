@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 
 import { Account } from 'appwrite';
 import appwriteClient from '@/libs/appwrite';
@@ -7,8 +7,8 @@ import { FETCH_STATUS } from '@/utils/constants';
 
 export default function useUser() {
   const account = new Account(appwriteClient);
-  const [currentAccount, setCurrentAccount] = React.useState();
-  const [accountStatus, setAccountStatus] = React.useState(
+  const [currentAccount, setCurrentAccount] = useState();
+  const [accountStatus, setAccountStatus] = useState(
     FETCH_STATUS.LOADING
   );
   const router = useRouter();
