@@ -7,7 +7,7 @@ import { FETCH_STATUS } from '@/utils/constants'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
-const ResetPassword = () => {
+export default function ResetPassword() {
 
     const [form, setForm] = useState({
         password: '',
@@ -157,5 +157,3 @@ const ResetPassword = () => {
         </>
     )
 }
-
-export default ResetPassword

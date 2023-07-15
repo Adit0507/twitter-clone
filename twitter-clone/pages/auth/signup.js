@@ -6,7 +6,7 @@ import { useRouter } from 'next/router'
 import appwriteClient from "@/libs/appwrite"
 import { FETCH_STATUS } from '@/utils/constants'
 
-const Signup = () => {
+export default function Signup (){
     const router = useRouter()
     const [form, setForm] = useState({
         name: '',
@@ -169,4 +169,3 @@ const Signup = () => {
     )
 }
 
-export default signup

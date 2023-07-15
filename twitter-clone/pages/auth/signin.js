@@ -8,7 +8,7 @@ import { FETCH_STATUS } from "@/utils/constants"
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 
-const Signin = () => {
+export default function Signin() {
     const [form, setForm] = useState({
         email: '',
         password: '',
@@ -153,4 +153,3 @@ const Signin = () => {
     )
 }
 
-export default signin

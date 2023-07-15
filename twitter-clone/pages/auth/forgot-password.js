@@ -7,7 +7,7 @@ import { FETCH_STATUS } from "@/utils/constants"
 import { useRouter } from "next/router"
 import Link from 'next/link'
 
-const ForgotPassword = () => {
+export default function ForgotPassword () {
     const [form, setForm] = useState({
         // name: '',
         email: '',
@@ -137,5 +137,3 @@ const ForgotPassword = () => {
         </>
     )
 }
-
-export default ForgotPassword
