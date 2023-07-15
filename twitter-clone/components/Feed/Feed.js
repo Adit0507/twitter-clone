@@ -56,6 +56,8 @@ const Feed = ({ tweets: tweetsProp }) => {
       </div>
 
       <hr className='border-gray-600' />
+
+      <CreateTweetForm onTweetCreated={onTweetCreated} /> 
       <div></div>
       {tweetsSortedByCreatedDate?.map((tweet) => (
         <Tweet

@@ -6,7 +6,7 @@ import useUser from "@/hooks/useUser"
 export default function CreateTweetForm({ onTweetCreated }) {
   const { currentAccount } = useUser();
 
-  const [tweetForm, setTweetForm] = React.useState({
+  const [tweetForm, setTweetForm] = useState({
     text: '',
   });
 
