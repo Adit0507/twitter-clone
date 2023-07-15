@@ -4,7 +4,7 @@ import { Databases, Functions } from 'appwrite'
 import Modal from "@/components/Modal"
 
 const Tweet = ({ tweet, onTweetRemoved, onLikeTweetCallback }) => {
-  const [isModalOpen, setIsModalOpen] = React.useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const onRemoveTweet = async () => {
     const databases = new Databases(appwriteClient);

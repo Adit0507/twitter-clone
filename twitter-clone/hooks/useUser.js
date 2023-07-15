@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import { Account } from 'appwrite';
 import appwriteClient from '@/libs/appwrite';
@@ -36,7 +36,7 @@ export default function useUser() {
     router.push('/auth/signin')
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     getSession();
   }, []);
 
